@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+*{
+    box-sizing: border-box;
+    /* margin: 0; */
+    padding:0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Rowdies', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:10px;
+}
+
+.container{
+    background-color: black;
+    border-radius: 55px;
+    color: #fff;
+    height: 700px;
+    width: 550px;
+    padding: 20px;
+    
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header .screen{
+    height: 270px;
+    width: 480px;
+    font-size: 70px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+header div.previous{
+    opacity: 0.7;
+    overflow: hidden;
+}
+main{
+    display: grid;
+}
+
+main.buttons{
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+main .button{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color:#333;
+    border-radius:50%;
+    cursor: pointer;
+    font-size: 50px;
+    height: 90px;
+    width: 90px;
+    /* transition-trans: ; */
+}
+
+main .button.function{
+    color:black;
+    background-color: #a5a5a4;
+
+}
+
+main .button.operator{
+background-color: #f1a33c;
+}
+
+/* .button .number0{
+    height: 100px;
+    width: 220px;
+    border-radius: 55px;
+    grid-column: 1/span 2;
+    padding: 5px 0px 5px 40px;
+ 
+
+
+} */
+
+.button.number0{
+    /* border: 2px solid red; */
+    height: 100px;
+    width: 230px;
+    border-radius: 50px;
+    grid-column: 1 / span 2;
+    padding: 5px 78px 0px 0px;
+}
+
+.button:hover{
+    opacity: 0.6;
+}
